@@ -1,0 +1,141 @@
+# ⚡ HAPPY Quick Reference Card
+
+## 🚀 Start HAPPY
+
+### Terminal 1: Backend (keep running)
+```bash
+cd C:\Users\DELL\Documents\AI\happy\backend
+python -m uvicorn main:app --reload
+```
+✅ Backend at: `http://127.0.0.1:8000`
+
+### Terminal 2: Frontend (new)
+```bash
+cd C:\Users\DELL\Documents\AI\happy\frontend
+npm install        # First time only
+npm run dev
+```
+✅ Frontend at: `http://localhost:5173`
+
+### Browser
+```
+http://localhost:5173
+```
+
+---
+
+## 🧪 Test Commands
+
+```
+open notepad
+open calculator
+remember my name is Alice
+what is my name?
+create folder HAPPY_TEST
+```
+
+---
+
+## 📊 Ports & URLs
+
+| Service | URL | Status |
+|---------|-----|--------|
+| Backend | http://127.0.0.1:8000 | Running ✅ |
+| Frontend | http://localhost:5173 | Ready |
+| Database | happy_memory.db | SQLite |
+
+---
+
+## 🔧 Config Files
+
+| File | Purpose |
+|------|---------|
+| `backend/main.py` | FastAPI server |
+| `backend/requirements.txt` | Python dependencies |
+| `frontend/package.json` | npm config |
+| `frontend/vite.config.js` | Vite settings |
+| `frontend/src/api/happyApi.js` | API client |
+
+---
+
+## 📁 Key Directories
+
+```
+happy/
+├─ backend/           # Python FastAPI
+├─ frontend/src/      # React components
+├─ frontend/public/   # Static assets
+└─ [Docs]            # README, SETUP, ARCHITECTURE
+```
+
+---
+
+## 🐛 Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| npm not found | Restart PowerShell |
+| Port 5173 in use | `npm run dev -- --port 5174` |
+| Port 8000 in use | `python -m uvicorn main:app --reload --port 8001` |
+| CORS errors | Check backend has CORS middleware |
+| Backend not responding | Check `http://127.0.0.1:8000/health` |
+
+---
+
+## 💾 Important Files
+
+- **README.md** - Main overview
+- **SETUP.md** - Installation guide
+- **ARCHITECTURE.md** - How it works
+- **DEPLOYMENT_READY.md** - Full details
+- **test_happy.py** - Backend testing
+
+---
+
+## 🎯 Success Checklist
+
+- [ ] Backend runs
+- [ ] Frontend installs
+- [ ] Browser shows UI
+- [ ] Can type commands
+- [ ] Commands execute
+- [ ] Responses show
+- [ ] Tasks tracked
+- [ ] Memory works
+- [ ] Full round-trip < 500ms
+
+✅ All checked = YOU WIN!
+
+---
+
+## 📞 Quick Help
+
+**Problem?** → Read SETUP.md  
+**Lost?** → Read README.md  
+**Curious?** → Read ARCHITECTURE.md  
+**Technical?** → Read code in `/backend` and `/frontend/src`
+
+---
+
+## 🚀 Next Phase
+
+After testing V0.1:
+1. Browser automation
+2. File operations  
+3. Windows control
+4. Voice input
+5. Voice output
+6. Desktop app
+7. Local LLM
+
+---
+
+**Everything is ready. Go connect it! 🎉**
+
+```bash
+# Copy-paste to get started:
+cd C:\Users\DELL\Documents\AI\happy\frontend
+npm install
+npm run dev
+# Then open http://localhost:5173
+```
